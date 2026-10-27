@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres_curso
+    environment:
+      POSTGRES_USER: curso
+      POSTGRES_PASSWORD: curso
+      POSTGRES_DB: tienda
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+      - ./postgres/scripts:/scripts:ros
+
+  mongo:
+    image: mongo:7
+    container_name: mongo_curso
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: curso
+      MONGO_INITDB_ROOT_PASSWORD: curso
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  postgres_data:
+  mongo_data:

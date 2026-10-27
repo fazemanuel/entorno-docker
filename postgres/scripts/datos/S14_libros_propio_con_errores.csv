@@ -1,0 +1,9 @@
+isbn,titulo,autor,categoria,anio_publicacion,ejemplares_disponibles
+9791234567001,La ciudad de los espejos,Maria Torres,Ficcion,2021,2
+9791234567002,Algoritmos cotidianos,Andres Rojas,Informatica,2023,1
+9791234567003,Memoria del rio,Camila Velez,Novela,2019,3
+9791234567004,El mapa de las estrellas,Santiago Ruiz,Ciencia,2022,0
+9791234567005,Historias del Pacifico,Laura Mendez,Historia,2020,1
+9791234567001,La ciudad de los espejos duplicada,Maria Torres,Ficcion,2021,4
+9791234567006,Cronicas del futuro,Diego Perez,Ciencia ficcion,2201,1
+9791234567007,Libro sin categoria,Diego Perez,,2021,1

@@ -38,7 +38,8 @@ SELECT n, linea,
 FROM stg_linea;
 
 -- 3. Validar (la primera regla que falla da el motivo)
-UPDATE stg_lector SET motivo = CASE
+UPDATE stg_lector 
+SET motivo = CASE
     WHEN num_campos <> 5                          THEN 'tiene ' || num_campos || ' columnas, se esperaban 5'
     WHEN documento = ''                           THEN 'documento vacío'
     WHEN documento !~ '^[0-9]{6,15}$'             THEN 'documento no numérico o de longitud inválida'
